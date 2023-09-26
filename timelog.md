@@ -1,9 +1,9 @@
 # Timelog
 
-* PROJECT NAME
-* YOUR NAME
-* STUDENT_ID
-* SUPERVISOR NAME
+* Self-tracking application to assist osteoporosis management
+* Libby Cornwall
+* 2565119c
+* Xianghua (Sharon) Ding
 
 ## Guidance
 
@@ -14,13 +14,14 @@
 
 ## Week 1
 
-### 19 Oct 2019
+### 19 Sept 2023
+* *0.5 hour* Read the level 4 individual project moodle
+* *0.5 hour* Met supervisor for the first time in person
+* *0.5 hour* Set up project folder, version control etc.
 
-* *4 hours* Read the project guidance notes
-* *0.5 hour* Created GitLab repository and cloned the cookiecutter for the projects
-* *1 hour* Modified dissertation template, compiled  
+### 24 Sept 2023
+* *0.5 hour* Contacted potential interviewees (osteoporosis diagnosed person, UofG medical school and UofG medical student)
+* *1 hour* Made 2 different interview question sets for interviewees for supervisor to review next week
 
-## 20 Oct 2019
+## Week 2
 
-* *1 hour* meeting with supervisor
-* *2 hours* writing initial version of test harness
