@@ -25,3 +25,15 @@
 
 ## Week 2
 
+### 26 Sept 2023
+* *0.5 hour* Weekly meeting with supervisor. Goals to sort ethics, make interview questions more specific and read more.
+* *1 hour* Changed from GitLab to GitHub as preferred format with supervisor - had to create access tokens etc. hence time taken.
+
+### 27 Sept 2023
+* *1 hour* Changing interview questions and categorising them
+* *2 hours* Setting up ethics checklist, finishing introduction and debriefing script
+
+### 29 Sept 2023
+* *2 hours* Interview conducted with first medical professional - in supervisor's presence 
+
+
