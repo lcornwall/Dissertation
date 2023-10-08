@@ -36,4 +36,18 @@
 ### 29 Sept 2023
 * *2 hours* Interview conducted with first medical professional - in supervisor's presence 
 
+## Week 3
+
+### 03 Oct 2023
+* *0.5 hour* Met supervisor to discuss how to analyse interview results
+
+### 06 Oct 2023
+* *1 hour* Interviewed medical student online
+
+## 08 Oct 2023
+* *1 hour* Interviewed patient with osteoporosis online
+
+## Week 4
+
+
 
