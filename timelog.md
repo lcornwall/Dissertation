@@ -44,10 +44,16 @@
 ### 06 Oct 2023
 * *1 hour* Interviewed medical student online
 
-## 08 Oct 2023
+### 08 Oct 2023
 * *1 hour* Interviewed patient with osteoporosis online
 
 ## Week 4
+
+### 11 Oct 2023
+* *1 hour* Transcribing interviews
+
+### 15 Oct 2023
+* *2 hours* Transcribing interviews
 
 
 
