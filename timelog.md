@@ -55,5 +55,17 @@
 ### 15 Oct 2023
 * *2 hours* Transcribing interviews
 
+## Week 5
+
+### 17 Oct 2023
+* *0.5 hour* Supervisor meeting
+* *3 hours* Finishing up interview transcripts
+
+### 18 Oct 2023
+* *1 hour* Analysing the interview results for design problem
+
+### 20 Oct 2023
+* *2 hours* First wireframe design
+
 
 
