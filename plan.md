@@ -9,13 +9,13 @@ Week-by-week plan for the whole project. Update this as you go along.
 
 ## Winter semester
 
-* **Week 1**
-* **Week 2**
-* **Week 3**
-* **Week 4**
-* **Week 5**
-* **Week 6**
-* **Week 7**
+* **Week 1** Understand project and meet supervisor.
+* **Week 2** Finalise questions and ethics for interviews.
+* **Week 3** Interviews and start to transcribe.
+* **Week 4** Transcribing (delays due to AI inaccuracy).
+* **Week 5** Finish and analyse design problems. 
+* **Week 6** Finalise designs prototypes to get feedback. 
+* **Week 7** Get final design feedback and pick code base to start code.
 * **Week 8**
 * **Week 9**
 * **Week 10**
