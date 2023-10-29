@@ -67,5 +67,12 @@
 ### 20 Oct 2023
 * *2 hours* First wireframe design
 
+## Week 6
+
+### 24 Oct 2023
+* *0.5 hour* Supervisor meeting
+
+### 29 Oct 2023
+* 4 hours* Prototype finishing for flashcard and button ideas
 
 
