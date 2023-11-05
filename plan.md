@@ -16,7 +16,7 @@ Week-by-week plan for the whole project. Update this as you go along.
 * **Week 5** Finish and analyse design problems. 
 * **Week 6** Finalise designs prototypes to get feedback. 
 * **Week 7** Get final design feedback and pick code base to start code.
-* **Week 8**
+* **Week 8** Start coding some pages possibly and connect back end.
 * **Week 9**
 * **Week 10**
 * **Week 11 [PROJECT WEEK]**

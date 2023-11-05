@@ -75,4 +75,13 @@
 ### 29 Oct 2023
 * 4 hours* Prototype finishing for flashcard and button ideas
 
+## Week 7 
+
+### 31 Oct 2023
+* *0.5 hour* Supervisor meeting
+* *0.5 hour* Talk to interviewee about designs
+
+### 5 Nov 2023
+* *2 hours* Set up react app and firebase accounts
+
 
