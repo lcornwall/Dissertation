@@ -84,4 +84,17 @@
 ### 5 Nov 2023
 * *2 hours* Set up react app and firebase accounts
 
+## Week 8
+
+### 8 Nov 2023
+* *0.5 hour* Supervisor meeting
+* *1 hour* Design feedback recap
+
+### 12 Nov 2023
+* *5 hours* React set up log in, forgot password etc, connect firebase
+* *1 hour* Some CSS
+
+## Week 9
+
+
 

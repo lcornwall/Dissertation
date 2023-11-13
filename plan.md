@@ -1,9 +1,9 @@
 # Plan
 
-* PROJECT TITLE
-* YOUR NAME
-* STUDENT ID
-* SUPERVISOR NAME
+* Self-tracking application to assist osteoporosis management
+* Libby Cornwall
+* 2565119c
+* Xianghua (Sharon) Ding
 
 Week-by-week plan for the whole project. Update this as you go along.
 
@@ -17,7 +17,7 @@ Week-by-week plan for the whole project. Update this as you go along.
 * **Week 6** Finalise designs prototypes to get feedback. 
 * **Week 7** Get final design feedback and pick code base to start code.
 * **Week 8** Start coding some pages possibly and connect back end.
-* **Week 9**
+* **Week 9** Create the buttons on the landing page and get them to go to correct pages/perhaps a logo for the app
 * **Week 10**
 * **Week 11 [PROJECT WEEK]**
 * **Week 12 [PROJECT WEEK]** Status report submitted.
