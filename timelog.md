@@ -95,6 +95,15 @@
 * *1 hour* Some CSS
 
 ## Week 9
+* I was sick this week so I only manage about 3 hours of work 
+
+### 14 Nov 2023
+* *1 hour* Admin, notes, tidying project
+
+## 16 Nov 2023
+* *2 hours Setting up pages and buttons
+
+## Week 10 
 
 
 
