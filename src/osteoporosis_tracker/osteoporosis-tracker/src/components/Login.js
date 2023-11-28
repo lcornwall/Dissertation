@@ -2,6 +2,8 @@ import React, { useRef, useState } from "react"
 import { Form, Button, Card, Alert } from "react-bootstrap"
 import { useAuth } from "../contexts/AuthContext"
 import { Link, useNavigate } from "react-router-dom"
+import Logo from './Logo';
+
 
 export default function Login() {
   const emailRef = useRef();
@@ -27,6 +29,10 @@ export default function Login() {
 
   return (
     <>
+      <div class="universalLogoHeading">
+        <h1> Osteoporosis Tracker</h1>
+        <Logo></Logo>
+      </div>
       <Card>
         <Card.Body>
           <h2 className="text-center mb-4">Log In</h2>
@@ -47,7 +53,7 @@ export default function Login() {
             </Form.Group>
 
             <br></br>
-            <Button disabled={loading} className="w-100" type="submit">
+            <Button disabled={loading} className="w-100" style={{ backgroundColor: '#11b3b3', color: 'white', border: '1px solid #11b3b3' }} type="submit">
               Log In
             </Button>
           </Form>

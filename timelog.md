@@ -101,9 +101,18 @@
 * *1 hour* Admin, notes, tidying project
 
 ## 16 Nov 2023
-* *2 hours Setting up pages and buttons
+* *2 hours* Setting up pages and buttons
 
 ## Week 10 
+
+### 24 Nov 2023
+* *2 hours* Styling of CSS
+* *1 hour* Fixing SVG image I made
+
+### 25 Nov 2023
+* *1 hour* Admin
+
+## Week 11
 
 
 

@@ -2,6 +2,7 @@ import React, { useRef, useState } from "react";
 import { Form, Button, Card, Alert } from "react-bootstrap";
 import { useAuth } from "../contexts/AuthContext";
 import { Link, useNavigate } from "react-router-dom"
+import Logo from './Logo';
 
 export default function Signup() {
   const emailRef = useRef();
@@ -33,9 +34,13 @@ export default function Signup() {
 
   return (
     <>
+      <div class="universalLogoHeading">
+        <h2> Osteoporosis Tracker</h2>
+        <Logo></Logo>
+      </div>
       <Card>
         <Card.Body>
-          <h2 className="text-center mb-4">Sign Up</h2>
+          <h1 className="text-center mb-4">Sign Up</h1>
           {error && <Alert variant="danger">{error}</Alert>}
           <Form onSubmit={handleSubmit}>
             <Form.Group id="email">
@@ -61,7 +66,7 @@ export default function Signup() {
               />
             </Form.Group>
             <br></br>
-            <Button disabled={loading} className="w-100" type="submit">
+            <Button disabled={loading} className="w-100 customButton" style={{ backgroundColor: '#11b3b3', color: 'white', border: '1px solid #11b3b3' }} type="submit">
               Sign Up
             </Button>
           </Form>

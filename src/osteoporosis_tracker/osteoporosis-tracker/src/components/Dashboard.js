@@ -3,6 +3,8 @@ import { Card, Button, Alert } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import { useAuth } from "../contexts/AuthContext";
+import Logo from './Logo';
+
 
 import diet from "../assets/diet.svg";
 import sun from "../assets/sun.svg";
@@ -28,6 +30,10 @@ export default function Dashboard() {
 
   return (
     <>
+      <div class="universalLogoHeading">
+        <h1> Osteoporosis Tracker</h1>
+        <Logo></Logo>
+      </div>
       <Card>
         <Card.Body>
           <h2 className="text-center mb-4"> Welcome </h2>
