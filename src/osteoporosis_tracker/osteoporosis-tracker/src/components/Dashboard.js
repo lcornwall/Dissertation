@@ -3,7 +3,7 @@ import { Card, Button, Alert } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import { useAuth } from "../contexts/AuthContext";
-import Logo from './Logo';
+import logo from "../assets/logo.svg";
 
 
 import diet from "../assets/diet.svg";
@@ -32,7 +32,7 @@ export default function Dashboard() {
     <>
       <div class="universalLogoHeading">
         <h1> Osteoporosis Tracker</h1>
-        <Logo></Logo>
+        <img src={logo} alt="logo" width="170" height="190" />
       </div>
       <Card>
         <Card.Body>
@@ -51,27 +51,27 @@ export default function Dashboard() {
 
       <div className="w-100 text-center mt-2">
         <div className="d-flex justify-content-around flex-wrap">
-          <Link to="/svg1" className="biggerSquareButton">
+          <Link to="/diet" className="biggerSquareButton">
             <img src={diet} alt="diet" width="50" height="50" />
           </Link>
 
-          <Link to="/svg2" className="biggerSquareButton">
+          <Link to="/exercise" className="biggerSquareButton">
             <img src={exercise} alt="exercise" width="50" height="50" />
           </Link>
 
-          <Link to="/svg3" className="biggerSquareButton">
+          <Link to="/sun" className="biggerSquareButton">
             <img src={sun} alt="sun" width="50" height="50" />
           </Link>
 
-          <Link to="/svg4" className="biggerSquareButton">
+          <Link to="/education" className="biggerSquareButton">
             <img src={education} alt="education" width="50" height="50" />
           </Link>
 
-          <Link to="/svg5" className="biggerSquareButton">
+          <Link to="/livingenvironment" className="biggerSquareButton">
             <img src={living} alt="living" width="50" height="50" />
           </Link>
 
-          <Link to="/svg6" className="biggerSquareButton">
+          <Link to="/data" className="biggerSquareButton">
             <img src={data} alt="data" width="50" height="50" />
           </Link>
         </div>

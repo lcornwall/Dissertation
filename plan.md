@@ -19,8 +19,9 @@ Week-by-week plan for the whole project. Update this as you go along.
 * **Week 8** Start coding some pages possibly and connect back end.
 * **Week 9** Create the buttons on the landing page and get them to go to correct pages/perhaps a logo for the app
 * **Week 10** As I was sick in week 9, get logo and work on indiviual pages 
-* **Week 11 [PROJECT WEEK]** Do more work on individual pages i.e. diet page
-* **Week 12 [PROJECT WEEK]** Status report submitted.
+* **Week 11** Do more work on individual pages i.e education page
+* **Week 12 [PROJECT WEEK]** 
+* **Week 13 [PROJECT WEEK]** Status report submitted.
 
 ## Winter break
 

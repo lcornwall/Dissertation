@@ -114,5 +114,15 @@
 
 ## Week 11
 
+### 28 Nov 2023
+* *2 hours* Getting education content
+
+### 3 Dec 2023
+* *4 hours* Making education page
+
+## Week 12
+
+
+
 
 

@@ -2,7 +2,7 @@ import React, { useRef, useState } from "react";
 import { Form, Button, Card, Alert } from "react-bootstrap";
 import { useAuth } from "../contexts/AuthContext";
 import { Link, useNavigate } from "react-router-dom"
-import Logo from './Logo';
+import logo from "../assets/logo.svg";
 
 export default function Signup() {
   const emailRef = useRef();
@@ -36,7 +36,7 @@ export default function Signup() {
     <>
       <div class="universalLogoHeading">
         <h2> Osteoporosis Tracker</h2>
-        <Logo></Logo>
+        <img src={logo} alt="logo" width="170" height="190" />
       </div>
       <Card>
         <Card.Body>

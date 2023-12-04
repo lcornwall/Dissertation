@@ -67,10 +67,10 @@
 .biggerSquareButton {
   flex: 0 0 calc(33.33% - 20px);
   margin-bottom: 20px;
-  padding: 60px;
+  padding: 55px;
   text-align: center;
   text-decoration: none;
-  border-radius: 12px; 
+  border-radius: 11px; 
   background-color: #11b3b3;
   color: white;
 }
@@ -85,12 +85,14 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 60vh; 
+  min-height: 40vh;
+  padding: 10px; 
+  box-sizing: border-box; 
 }
 
 .welcomeHeading {
   text-align: center;
-  font-size: 1.6em;
+  font-size: 3em;
   margin-bottom: 20px;
   color: white;
 }
@@ -105,4 +107,92 @@
   align-items: center;
   justify-content: center;
   height: 20vh;
+}
+
+.dietContainer {
+  color: white; 
+  background-color: #ffffff;
+  font-family: Arial, sans-serif; 
+}
+
+.header {
+  text-align: center;
+  padding: 20px;
+}
+
+.logo {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.dietInfo, .vitaminD, .lifestyleTips, .exerciseForBones {
+  padding: 20px;
+  margin: 10px;
+  border-radius: 5px;
+  background-color: rgb(255, 255, 255)fff;
+  color: white;
+  font-weight: bold;
+}
+
+.dietInfo h2, .vitaminD h2, .lifestyleTips h2, .exerciseForBones h2 {
+  margin-top: 0;
+  text-decoration: underline; 
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+table th, table td {
+  border: 1px solid #ffffff;
+  padding: 8px;
+  text-align: left;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  margin-top: 30px;
+  background-color: #ffffff00;
+  color: white;
+}
+
+.underlined-heading {
+  text-decoration: underline;
+}
+
+.no-bullets {
+  list-style-type: none; 
+  padding: 0;         
+}
+
+.buttonContainer {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.scrollButton {
+  background-color: #11b3b3; 
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.scrollButton:hover {
+  background-color: 4f9489;
+  transform: translateY(-2px);
 }

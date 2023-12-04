@@ -2,7 +2,7 @@ import React, { useRef, useState } from "react"
 import { Form, Button, Card, Alert } from "react-bootstrap"
 import { useAuth } from "../contexts/AuthContext"
 import { Link, useNavigate } from "react-router-dom"
-import Logo from './Logo';
+import logo from "../assets/logo.svg";
 
 
 export default function Login() {
@@ -31,7 +31,7 @@ export default function Login() {
     <>
       <div class="universalLogoHeading">
         <h1> Osteoporosis Tracker</h1>
-        <Logo></Logo>
+        <img src={logo} alt="logo" width="170" height="190" />
       </div>
       <Card>
         <Card.Body>
