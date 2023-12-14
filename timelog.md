@@ -122,6 +122,19 @@
 
 ## Week 12
 
+### 4 Dec 2023
+* *4 hours* CSS styling
+* *1 hour* Logo fix
+
+### 7 Dec 2023
+* *1 hour* Admin
+
+## Week 13
+
+###  13 Dec 2023
+* *0.5 hours* Supervisor meeting
+* *2 hours* Plan changes and new implementation
+* *2 hours* Status report submitted
 
 
 
