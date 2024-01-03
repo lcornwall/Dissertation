@@ -63,15 +63,16 @@ export default function Dashboard() {
             <img src={sun} alt="sun" width="50" height="50" />
           </Link>
 
-          <Link to="/education" className="biggerSquareButton">
-            <img src={education} alt="education" width="50" height="50" />
-          </Link>
 
           <Link to="/livingenvironment" className="biggerSquareButton">
             <img src={living} alt="living" width="50" height="50" />
           </Link>
 
-          <Link to="/data" className="biggerSquareButton">
+          <Link to="/education" className="nonTrackingButtons">
+            <img src={education} alt="education" width="50" height="50" />
+          </Link>
+
+          <Link to="/data" className="nonTrackingButtons">
             <img src={data} alt="data" width="50" height="50" />
           </Link>
         </div>

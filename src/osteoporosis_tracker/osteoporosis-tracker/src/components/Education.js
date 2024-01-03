@@ -12,6 +12,10 @@ export default function Education() {
 
     const scrollToRef = (ref) => window.scrollTo(0, ref.current.offsetTop);
 
+    const navigateToHome = () => {
+        window.location.href = '/dashboard';
+    };
+
     return (
         <div className="landingContainer">
             <div className="header">
@@ -21,6 +25,10 @@ export default function Education() {
 
                 <br></br>
             </div>
+            <button onClick={navigateToHome} className="homeButton">
+                Home
+            </button>
+
             <div className="buttonContainer">
                     <button onClick={() => scrollToRef(dietRef)} className="scrollButton">Diet</button>
                     <button onClick={() => scrollToRef(vitaminDRef)} className="scrollButton">Vitamin D</button>

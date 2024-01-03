@@ -75,6 +75,23 @@
   color: white;
 }
 
+.nonTrackingButtons{
+  flex: 0 0 calc(33.33% - 20px);
+  margin-bottom: 20px;
+  padding: 55px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 11px; 
+  background-color: #7eb146;
+  color: white;
+
+}
+
+.nonTrackingButtons:hover, .nonTrackingButtons:focus, .nonTrackingButtons:active{
+  background-color:rgb(86, 118, 52);
+  color: white;
+}
+
 .biggerSquareButton:hover, .biggerSquareButton:focus, .biggerSquareButton:active {
   background-color:#4f9489;
   color: white;
@@ -192,7 +209,71 @@ footer {
   transition: background-color 0.3s, transform 0.3s;
 }
 
-.scrollButton:hover {
-  background-color: 4f9489;
+.homeButton {
+  background-color: #7eb146; 
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.homeButton:hover{
+  background-color: rgb(86, 118, 52);
   transform: translateY(-2px);
+
+}
+
+.scrollButton:hover {
+  background-color: #4f9489;
+  transform: translateY(-2px);
+}
+
+.formContainer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.exerciseForm {
+  width: 100%; 
+  max-width: 500px;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.formLabel {
+  margin-bottom: 5px;
+}
+
+.formSelect, .formInput {
+  padding: 10px;
+  font-size: 1rem;
+}
+
+.submitBtn {
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.error {
+  color: red;
+  margin-top: 5px;
+  font-size: 0.8rem;
+}
+
+.sunTrackingForm {
+  width: 100%;
+  max-width: 500px;
 }
