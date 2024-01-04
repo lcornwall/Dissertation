@@ -277,3 +277,29 @@ footer {
   width: 100%;
   max-width: 500px;
 }
+
+.imageGallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  padding: 10px;
+}
+
+.imageGallery div {
+  border: 1px solid #ddd; 
+  border-radius: 4px;
+  padding: 5px;
+  background-color: white;
+}
+
+.imageGallery img {
+  width: 100%; 
+  max-width: 300px;
+  height: auto; 
+  border-radius: 4px;
+}
+
+.advice{
+  justify-content: center;
+}

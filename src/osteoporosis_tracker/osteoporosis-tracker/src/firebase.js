@@ -2,6 +2,7 @@ import firebase from 'firebase/compat/app';
 import 'firebase/compat/auth';
 import 'firebase/auth';
 import 'firebase/compat/firestore';
+import 'firebase/compat/storage';
 import { get, getDatabase, ref, set, update} from 'firebase/database';
 
 const app = firebase.initializeApp({
@@ -35,4 +36,5 @@ export function writeUserData(userID, email){
 }
 
 export const auth = app.auth()
+export const storage = app.storage()
 export default app

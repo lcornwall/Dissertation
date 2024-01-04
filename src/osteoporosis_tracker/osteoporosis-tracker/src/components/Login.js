@@ -29,7 +29,7 @@ export default function Login() {
 
   return (
     <>
-      <div class="universalLogoHeading">
+      <div className="universalLogoHeading">
         <h1> Osteoporosis Tracker</h1>
         <img src={logo} alt="logo" width="170" height="190" />
       </div>

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
-import { getDatabase, ref, child, get, set, update } from "firebase/database";
-import { auth } from '../firebase'; 
+import { getDatabase, ref, get, set, update } from "firebase/database";
+import { auth } from '../firebase';
 import logo from "../assets/logo.svg";
 
 export default function Exercise() {
@@ -10,21 +10,55 @@ export default function Exercise() {
     const [isValid, setIsValid] = useState(true);
     const [isNewTypeValid, setIsNewTypeValid] = useState(true);
     const [existingTypes, setExistingTypes] = useState([]);
+    const [exerciseLog, setExerciseLog] = useState({});
+    const [noExerciseDone, setNoExerciseDone] = useState(false);
+
+    const fetchExerciseTypes = async () => {
+        const userID = auth.currentUser.uid;
+        const db = getDatabase();
+        const exerciseLogsRef = ref(db, `Exercise/${userID}/exerciseLogs`);
+    
+        try {
+            const exerciseLogsSnapshot = await get(exerciseLogsRef);
+            if (exerciseLogsSnapshot.exists()) {
+                const exerciseLogs = exerciseLogsSnapshot.val();
+                const types = new Set();
+                for (const logEntry of Object.values(exerciseLogs)) {
+                    for (const type of Object.keys(logEntry)) {
+                        types.add(type.toLowerCase());
+                    }
+                }
+                setExistingTypes([...types]);
+            } else {
+                console.log('No existing exercise logs found in database.');
+                setExistingTypes([]); 
+            }
+        } catch (error) {
+            console.error('Error fetching exercise logs:', error);
+        }
+    };
+
+    const fetchExerciseLog = async () => {
+        const userID = auth.currentUser.uid;
+        const db = getDatabase();
+        const today = new Date().toISOString().split('T')[0];
+        const exerciseLogRef = ref(db, `Exercise/${userID}/exerciseLogs/${today}`);
+
+        const logSnapshot = await get(exerciseLogRef);
+        if (logSnapshot.exists()) {
+            setExerciseLog(logSnapshot.val());
+            setNoExerciseDone(false);
+        } else {
+            setExerciseLog({});
+            setNoExerciseDone(true);
+        }
+    };
 
     useEffect(() => {
-        const fetchExerciseTypes = async () => {
-            const userID = auth.currentUser.uid;
-            const db = getDatabase();
-            const today = new Date().toISOString().split('T')[0];
-            const exerciseLogsRef = ref(db, `Exercise/${userID}/exerciseLogs/${today}`);
-
-            const snapshot = await get(exerciseLogsRef);
-            if (snapshot.exists()) {
-                setExistingTypes(Object.keys(snapshot.val()));
-            }
-        };
-
-        fetchExerciseTypes();
+        fetchExerciseTypes().then(() => {
+            console.log('Exercise types after fetching:', existingTypes); 
+        });
+        fetchExerciseLog();
     }, []);
 
     const validateDuration = (input) => {
@@ -41,21 +75,14 @@ export default function Exercise() {
     const handleNewExerciseTypeChange = (e) => {
         const value = e.target.value;
         setNewExerciseType(value);
-
-        // Validate new exercise type
-        if (value.length > 0 && value.length <= 50 && isNaN(value)) {
-            setIsNewTypeValid(true);
-        } else {
-            setIsNewTypeValid(false);
-        }
-
+        setIsNewTypeValid(value.length > 0 && value.length <= 50 && isNaN(value));
         if (value) setExerciseType('');
     };
 
     const handleSubmit = async (e) => {
         e.preventDefault();
 
-        if (!isValid || duration.trim() === '') {
+        if (!isValid || !validateDuration(duration)) {
             alert("Please enter a valid whole number or decimal value for duration.");
             return;
         }
@@ -65,7 +92,7 @@ export default function Exercise() {
             return;
         }
 
-        const typeToLog = newExerciseType || exerciseType;
+        const typeToLog = (newExerciseType || exerciseType).toLowerCase();
         if (!typeToLog) {
             alert("Please select or enter an exercise type.");
             return;
@@ -76,22 +103,29 @@ export default function Exercise() {
         const today = new Date().toISOString().split('T')[0];
         const typeRef = ref(db, `Exercise/${userID}/exerciseLogs/${today}/${typeToLog}`);
 
-        const snapshot = await get(typeRef);
-        if (snapshot.exists()) {
-            const currentDuration = snapshot.val() || 0;
-            const updatedDuration = currentDuration + parseFloat(duration);
-            await update(typeRef.parent, { [typeToLog]: updatedDuration });
-        } else {
-            await set(typeRef, parseFloat(duration));
-        }
+        try {
+            const snapshot = await get(typeRef);
+            if (snapshot.exists()) {
+                const currentDuration = snapshot.val() || 0;
+                const updatedDuration = (parseFloat(currentDuration) + parseFloat(duration)).toFixed(2);
+                await update(typeRef.parent, { [typeToLog]: updatedDuration });
+            } else {
+                await set(typeRef, parseFloat(duration).toFixed(2));
+            }
 
-        if (!existingTypes.includes(typeToLog)) {
-            setExistingTypes([...existingTypes, typeToLog]);
-        }
+            if (!existingTypes.includes(typeToLog)) {
+                await fetchExerciseTypes();
+            }
 
-        setExerciseType('');
-        setNewExerciseType('');
-        setDuration('');
+            setExerciseType('');
+            setNewExerciseType('');
+            setDuration('');
+
+            await fetchExerciseLog();
+        } catch (error) {
+            console.error("Error updating the exercise log", error);
+            alert("An error occurred while updating the exercise log.");
+        }
     };
 
     const navigateToHome = () => {
@@ -102,10 +136,21 @@ export default function Exercise() {
         <>
             <div className="landingContainer">
                 <h1 className="welcomeHeading">Exercise Tracking</h1>
+                <br></br>
                 <img src={logo} alt="logo" className="logo" />
                 <br></br>
                 <button onClick={navigateToHome} className="homeButton">Home</button>
                 <br></br>
+                <p>You can get exercise advice on the <a href="/education">education page</a>.</p>
+                <div className="exerciseLogDisplay">
+                    {noExerciseDone ? (
+                        <p>No exercise done today.</p>
+                    ) : (
+                        Object.entries(exerciseLog).map(([type, loggedDuration]) => (
+                            <p key={type}>{type}: {Number(loggedDuration).toFixed(2)} hours</p>
+                        ))
+                    )}
+                </div>
                 <div className="formContainer">
                     <form onSubmit={handleSubmit} className="exerciseForm">
                         <div className="formGroup">
