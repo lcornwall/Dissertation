@@ -85,7 +85,7 @@ export default function Sun() {
             <div className="landingContainer">
                 <h1 className="welcomeHeading">Sun Tracking</h1>
                 <br></br>
-                <img src={logo} alt="logo" className="logo" />
+                <img src={logo} alt="logo" width="400" height="200" />
                 <br></br>
                 <button onClick={navigateToHome} className="homeButton">Home</button>
                 <br></br>

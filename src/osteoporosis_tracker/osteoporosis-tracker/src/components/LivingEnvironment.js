@@ -12,11 +12,6 @@ export default function LivingEnvironment() {
     localStorage.setItem('uploadedImages', JSON.stringify(images));
   };
 
-  const loadImagesFromLocalStorage = () => {
-    const savedImages = localStorage.getItem('uploadedImages');
-    return savedImages ? JSON.parse(savedImages) : [];
-  };
-
   useEffect(() => {
     const unsubscribe = auth.onAuthStateChanged((user) => {
         if (user) {
