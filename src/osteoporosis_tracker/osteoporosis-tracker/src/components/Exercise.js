@@ -12,6 +12,47 @@ export default function Exercise() {
     const [existingTypes, setExistingTypes] = useState([]);
     const [exerciseLog, setExerciseLog] = useState({});
     const [noExerciseDone, setNoExerciseDone] = useState(false);
+    const [randomFact, setRandomFact] = useState('');
+
+    const facts = [
+        "Weight-bearing exercises, such as walking and jogging, help build and maintain bone density.",
+        "Strength training exercises, like lifting weights, can strengthen bones and reduce the risk of osteoporosis.",
+        "High-impact exercises, including dancing and aerobics, are effective in stimulating bone growth.",
+        "Low-impact exercises, such as elliptical training and stair stepping, are beneficial for those with existing osteoporosis.",
+        "Balance exercises, like tai chi and yoga, can reduce the risk of falls, a major concern in osteoporosis.",
+        "Regular exercise can slow down the rate of bone loss associated with aging and osteoporosis.",
+        "Swimming and cycling, while great for cardiovascular health, are not weight-bearing and have less impact on bone density.",
+        "Resistance training can improve muscle strength and coordination, which supports bone health and balance.",
+        "Pilates can help improve core strength, balance, and body awareness, reducing the risk of falls.",
+        "Older adults engaging in regular physical activity have a lower risk of osteoporotic fractures.",
+        "Exercise programs for osteoporosis patients should be designed to minimize the risk of vertebral fractures.",
+        "Flexibility exercises help maintain joint health and prevent injuries in individuals with osteoporosis.",
+        "Posture exercises can help prevent the stooped posture often associated with advanced osteoporosis.",
+        "Jumping exercises are effective in increasing hip bone density, but should be done cautiously.",
+        "Regular walking has been shown to improve bone density in the spine and hip.",
+        "Exercise routines should be started gradually and increased in intensity to prevent injury.",
+        "It's important to avoid high-impact exercises that pose a risk of falling for people with severe osteoporosis.",
+        "Bone-loading exercises, which apply force to the bones, are essential for bone health.",
+        "Activities that involve bending forward and twisting the spine should be avoided in people with osteoporosis.",
+        "Engaging in a variety of exercises can address different aspects of bone health.",
+        "Consistency in exercising is key to preventing bone loss and managing osteoporosis.",
+        "Exercise in younger years can build a good bone density foundation, reducing the risk of osteoporosis later in life.",
+        "Post-menopausal women can significantly benefit from regular exercise in terms of maintaining bone density.",
+        "Professional guidance from a physiotherapist or exercise specialist is recommended for osteoporosis patients.",
+        "Incorporating exercises that improve reaction time can help prevent falls by enhancing the ability to catch oneself mid-fall."
+    ];
+
+    useEffect(() => {
+        const randomIndex = Math.floor(Math.random() * facts.length);
+        setRandomFact(facts[randomIndex]);
+    
+
+        fetchExerciseTypes().then(() => {
+            console.log('Exercise types after fetching:', existingTypes); 
+        });
+        fetchExerciseLog();
+    }, []); 
+
 
     const fetchExerciseTypes = async () => {
         const userID = auth.currentUser.uid;
@@ -142,6 +183,7 @@ export default function Exercise() {
                 <button onClick={navigateToHome} className="homeButton">Home</button>
                 <br></br>
                 <p>You can get exercise advice on the <a href="/education">education page</a>.</p>
+                <p><strong>Random exercise fact for osteoporosis: {randomFact}</strong></p>
                 <div className="exerciseLogDisplay">
                     {noExerciseDone ? (
                         <p>No exercise done today.</p>
