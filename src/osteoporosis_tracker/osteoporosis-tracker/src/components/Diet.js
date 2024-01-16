@@ -135,8 +135,8 @@ const fetchImages = (userID) => {
         <input type="file" multiple onChange={handleFileChange} />
         <button onClick={uploadFiles}>Upload</button>
         <br></br>
-        <p>You can get diet advice on the <a href="/education">education page</a>.</p>
-        <p><strong>Random diet fact for osteoporosis: {randomFact}</strong></p>
+        <p>You can get diet advice on the <a href="https://osteoporosis-app-develop-c49ef.web.app/education">education page</a>.</p>
+        <p><strong>Diet fact for osteoporosis: {randomFact}</strong></p>
         <br></br>
         <p> Your food and drink uploads for today: </p>
         <div className="imageGallery">

@@ -34,10 +34,11 @@ export default function Signup() {
 
   return (
     <>
-      <div class="universalLogoHeading">
-        <h2> Osteoporosis Tracker</h2>
-        <img src={logo} alt="logo" width="170" height="190" />
+      <div class="universalLogoHeading text-center">
+        <h2 style={{ color: 'white' }}> Osteoporosis Tracker</h2>
+        <img src={logo} alt="logo" />
       </div>
+      <br></br>
       <Card>
         <Card.Body>
           <h1 className="text-center mb-4">Sign Up</h1>

@@ -182,8 +182,8 @@ export default function Exercise() {
                 <br></br>
                 <button onClick={navigateToHome} className="homeButton">Home</button>
                 <br></br>
-                <p>You can get exercise advice on the <a href="/education">education page</a>.</p>
-                <p><strong>Random exercise fact for osteoporosis: {randomFact}</strong></p>
+                <p>You can get exercise advice on the <a href="https://osteoporosis-app-develop-c49ef.web.app/education">education page</a>.</p>
+                <p><strong>Exercise fact for osteoporosis: {randomFact}</strong></p>
                 <div className="exerciseLogDisplay">
                     {noExerciseDone ? (
                         <p>No exercise done today.</p>
@@ -207,7 +207,7 @@ export default function Exercise() {
                                 }}
                                 disabled={newExerciseType !== ''}
                             >
-                                <option value="">Select an Exercise</option>
+                                <option value="">Select an Existing Exercise Type</option>
                                 {existingTypes.map((type) => (
                                     <option key={type} value={type}>{type}</option>
                                 ))}

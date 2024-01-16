@@ -120,8 +120,8 @@ export default function Sun() {
                 <br></br>
                 <button onClick={navigateToHome} className="homeButton">Home</button>
                 <br></br>
-                <p>You can get vitamin D advice on the <a href="/education">education page</a>.</p>
-                <p><strong>Random sun/vitamin D fact for osteoporosis: {randomFact}</strong></p>
+                <p>You can get vitamin D advice on the <a href="https://osteoporosis-app-develop-c49ef.web.app/education">education page</a>.</p>
+                <p><strong>Sun/vitamin D fact for osteoporosis: {randomFact}</strong></p>
                 <br></br>
                 
                 <p>Your hours in the sun for today are: <span>{todayLogs}</span> hours</p>

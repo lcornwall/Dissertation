@@ -114,16 +114,21 @@
   color: white;
 }
 
-.universalLogoHeading {
-  text-align: center;
-  font-size: 3em !important; 
-  margin-bottom: 10px;
-  color: white;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 20vh;
+.universalLogoHeading img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (max-width: 767px) {
+  .universalLogoHeading img {
+    max-width: 80%;
+  }
+
+  .universalLogoHeading h1,
+  .universalLogoHeading h2 {
+    font-size: 24px; 
+    color: white;
+  }
 }
 
 .dietContainer {

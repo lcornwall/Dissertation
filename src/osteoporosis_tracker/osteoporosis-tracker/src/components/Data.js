@@ -27,23 +27,31 @@ export default function Data() {
             fetchSunExposure(selectedDate);
             fetchImages(auth.currentUser.uid, selectedDate);
         } else {
-            setUploadedImages([]);
-            setChartData(null);
-            setSunChartData(null);
+            resetData();
         }
     }, [selectedDate]);
-    
+
+    const resetData = () => {
+        setExerciseLog({});
+        setSunExposure(null);
+        setChartData(null);
+        setSunChartData(null);
+        setUploadedImages([]);
+    };
 
     useEffect(() => {
         if (Object.keys(exerciseLog).length) {
             prepareChartData();
+        } else {
+            setChartData(null);
         }
     }, [exerciseLog]);
-    
 
     useEffect(() => {
         if (sunExposure !== null) {
             prepareSunChartData();
+        } else {
+            setSunChartData(null);
         }
     }, [sunExposure]);
 
@@ -185,67 +193,71 @@ export default function Data() {
     };
     
 
-
     return (
         <div className="landingContainer">
             <h1 className="welcomeHeading">Data Summary</h1>
-            <br></br>
+            <br />
             <img src={logo} alt="logo" width="400" height="200" />
-            <br></br>
+            <br />
             <button onClick={navigateToHome} className="homeButton">Home</button>
-            <br></br>
-
-            {availableDates.length > 0 && (
-                <div>
-                    <label htmlFor="dateSelector">Select a date: </label>
-                    <select id="dateSelector" value={selectedDate || ""} onChange={handleDateChange}>
-                        <option value="" disabled>Select a date</option>
-                        {availableDates.map(date => (
-                            <option key={date} value={date}>{date}</option>
-                        ))}
-                    </select>
-                </div>
-            )}
-
-            <div className="chartContainer">
-                {selectedDate ? (
-                    chartData ? (
-                        <Bar data={chartData} options={{ responsive: true, scales: { y: { beginAtZero: true } } }} />
-                    ) : (
-                        <p>No exercise data available for this date.</p>
-                    )
-                ) : (
-                    <p>Select a date to see exercise data.</p>
-                )}
-            </div>
-            <div className="chartContainer">
-                {selectedDate ? (
-                    sunChartData ? (
-                        <Bar data={sunChartData} options={{ responsive: true, scales: { y: { beginAtZero: true } } }} />
-                    ) : (
-                        <p>No sun exposure data available for this date.</p>
-                    )
-                ) : (
-                    <p>Select a date to see sun exposure data.</p>
-                )}
-            </div>
-            <div className="imageGallery">
-            {selectedDate && uploadedImages.length > 0 ? (
-                <>
-                    <p>Your food and drink uploads for the day:</p>
-                    {uploadedImages.map((image) => (
-                        <div key={image.name} className="imageItem">
-                            <img src={image.url} alt={image.name.split('/').pop()} />
-                        </div>
-                    ))}
-                </>
-            ) : selectedDate ? (
-                <p>No diet data available for this date.</p>
+            <br />
+    
+            {availableDates.length === 0 ? (
+                <p>There is no data recorded to summarise.</p>
             ) : (
-                <p>Select a date to see diet data.</p>
+                <>
+                    <div>
+                        <label htmlFor="dateSelector">Select a date: </label>
+                        <select id="dateSelector" value={selectedDate || ""} onChange={handleDateChange}>
+                            <option value="" disabled>Select a date</option>
+                            {availableDates.map(date => (
+                                <option key={date} value={date}>{date}</option>
+                            ))}
+                        </select>
+                    </div>
+    
+                    <div className="chartContainer">
+                        {selectedDate ? (
+                            chartData ? (
+                                <Bar data={chartData} options={{ responsive: true, scales: { y: { beginAtZero: true } } }} />
+                            ) : (
+                                <p>No exercise data available for this date.</p>
+                            )
+                        ) : (
+                            <p>Select a date to see exercise data.</p>
+                        )}
+                    </div>
+    
+                    <div className="chartContainer">
+                        {selectedDate ? (
+                            sunChartData ? (
+                                <Bar data={sunChartData} options={{ responsive: true, scales: { y: { beginAtZero: true } } }} />
+                            ) : (
+                                <p>No sun exposure data available for this date.</p>
+                            )
+                        ) : (
+                            <p>Select a date to see sun exposure data.</p>
+                        )}
+                    </div>
+    
+                    <div className="imageGallery">
+                        {selectedDate && uploadedImages.length > 0 ? (
+                            <>
+                                <p>Your food and drink uploads for the day:</p>
+                                {uploadedImages.map((image) => (
+                                    <div key={image.name} className="imageItem">
+                                        <img src={image.url} alt={image.name.split('/').pop()} />
+                                    </div>
+                                ))}
+                            </>
+                        ) : selectedDate ? (
+                            <p>No diet data available for this date.</p>
+                        ) : (
+                            <p>Select a date to see diet data.</p>
+                        )}
+                    </div>
+                </>
             )}
-        </div>
-
         </div>
     );
-}
+}    

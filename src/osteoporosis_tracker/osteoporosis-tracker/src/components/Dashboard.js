@@ -64,10 +64,11 @@ useEffect(() => {
 
   return (
     <>
-      <div class="universalLogoHeading">
-        <h1> Osteoporosis Tracker</h1>
-        <img src={logo} alt="logo" width="170" height="190" />
+      <div class="universalLogoHeading text-center">
+        <h2 style={{ color: 'white' }}> Osteoporosis Tracker</h2>
+        <img src={logo} alt="logo"/>
       </div>
+      <br></br>
       <Card>
         <Card.Body>
           <h2 className="text-center mb-4"> Welcome </h2>
@@ -75,7 +76,7 @@ useEffect(() => {
           <strong>Email: </strong>
           {currentUser.email}
           <br></br>
-          <strong> Random Osteoporosis fact: </strong>{randomFact} 
+          <strong>Osteoporosis Fact: </strong>{randomFact} 
         </Card.Body>
       </Card>
 
