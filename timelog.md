@@ -136,6 +136,47 @@
 * *2 hours* Plan changes and new implementation
 * *2 hours* Status report submitted
 
+## Winter Break
+* Estimated 60 hours doing:
+* Tracking photograph functionality for diet and living conditions
+* Tracking input for exercise and sun exposure
+* Database configurations
+* General styling of new features
+
+## Week 14
+
+### 09 Jan 2024
+* *0.25 hours* Supervisor meeting
+* *2 hours* Adding random facts to tracking components
+
+### 13 Jan 2024
+* *4 hours* Deploying application
+
+## Week 15
+
+### 16 Jan 2024
+* *0.25 hours* Supervisor meeting
+* *4 hours* Making minor css changes, more error messages etc for usability
+
+## Week 16
+
+### 23 Jan 2024
+* *0.25 hours* Supervisor meeting
+
+### 24 Jan 2024
+* 2 hours* Usability study with two participants
+
+### 25 Jan 2024
+* *2 hours* Usability study with two participants
+* *2 hours* Analysing results
+
+### 26 Jan 2024
+* *1 hour* Meeting to set up with person using my website
+
+## Week 16
+
+### 30 Jan 2024
+*0.25 hours* Meeting with supervisor
 
 
 
