@@ -178,5 +178,17 @@
 ### 30 Jan 2024
 *0.25 hours* Meeting with supervisor
 
+### 02 Feb 2024
+* *2 hours* Researching dissertation writing
+* *1 hour* Looking into abstracts
+
+### 04 Feb 2024
+* *2 hours* Reading papers
+
+## Week 18
+
+### 06 Feb 2024
+* *0.25 hours* Meeting supervisor
+
 
 

@@ -31,7 +31,7 @@ Week-by-week plan for the whole project. Update this as you go along.
 * **Week 15** Make minor changes and use the app/others for usability feedback etc.
 * **Week 16** Do some usability task tests and set up our patient to trial application.
 * **Week 17** Start writing dissertation.
-* **Week 18**
+* **Week 18** Do design / analysis/implentation for writing.
 * **Week 19**
 * **Week 20**
 * **Week 21**
