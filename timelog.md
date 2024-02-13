@@ -190,5 +190,10 @@
 ### 06 Feb 2024
 * *0.25 hours* Meeting supervisor
 
+### 10 Feb 2024
+* *6 hours* Writing analysis.
+
+## Week 19
+
 
 
