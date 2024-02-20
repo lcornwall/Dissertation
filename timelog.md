@@ -191,9 +191,18 @@
 * *0.25 hours* Meeting supervisor
 
 ### 10 Feb 2024
-* *6 hours* Writing analysis.
+* *6 hours* Writing analysis
 
 ## Week 19
+
+### 13 Feb 2024
+* *4 hours* Writing analysis
+* *2 hours* Checking patterns in patient data
+
+## Week 20
+
+### 20 Feb 2024
+* *0.5 hours* Supervisor meeting
 
 
 
