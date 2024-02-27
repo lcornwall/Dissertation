@@ -34,7 +34,7 @@ Week-by-week plan for the whole project. Update this as you go along.
 * **Week 18** Do design / analysis/implentation for writing.
 * **Week 19** Finish analysis writing and start design.
 * **Week 20** Interview patient and doctor.
-* **Week 21**
+* **Week 21** Do a big section - background.
 * **Week 22**
 * **Week 23 [TERM ENDS]**
 * **Week 24** Dissertation submission deadline and presentations.

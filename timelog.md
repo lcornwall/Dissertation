@@ -203,6 +203,14 @@
 
 ### 20 Feb 2024
 * *0.5 hours* Supervisor meeting
+* *2 hours* Finishing analysis
+
+## Week 21
+
+### 27 Feb 2024
+* 0.25 hours* Supervisor meeting
+
+
 
 
 
