@@ -210,6 +210,14 @@
 ### 27 Feb 2024
 * 0.25 hours* Supervisor meeting
 
+### 04 March 2024
+* *4 hours* Writing background and laying out design.
+
+## Weel 22
+
+### 05 March 2024
+* *1 hour* Supervisor meeting.
+
 
 
 
