@@ -213,10 +213,16 @@
 ### 04 March 2024
 * *4 hours* Writing background and laying out design.
 
-## Weel 22
+## Week 22
 
 ### 05 March 2024
 * *1 hour* Supervisor meeting.
+
+### 06 March 2024
+* *3 hours* Writing introduction, abstract.
+* *2 hours* Finishing design.
+
+## Week 23
 
 
 

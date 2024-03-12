@@ -36,6 +36,6 @@ Week-by-week plan for the whole project. Update this as you go along.
 * **Week 20** Interview patient and doctor.
 * **Week 21** Do a big section - background.
 * **Week 22** Finish background and design.
-* **Week 23 [TERM ENDS]**
+* **Week 23 [TERM ENDS]** Finish implementation, evaluation, conclusion.
 * **Week 24** Dissertation submission deadline and presentations.
 
