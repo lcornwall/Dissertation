@@ -4,7 +4,7 @@ The code presented is a React website connected to a Firebase backend.
 
 The only file directory that has code I have created is src.
 
-Inside the osteoporosis_tracker\osteoporosis-tracker\src directory we have:
+Inside the \osteoporosis_tracker\osteoporosis-tracker\src directory we have:
 
 - an assets directory - which contains the images used on the website.
 - a components directory - which has all the .js files for login, signup, diet page, etc. 
