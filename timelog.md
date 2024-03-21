@@ -224,6 +224,21 @@
 
 ## Week 23
 
+### 07 March 2024
+* *3 hours* Writing implementation.
+* *1 hour* Laying out evaluation.
+
+### 13 March 2024
+* *5 hours* Evaluation writing.
+
+### 15 March 2024
+* *3 hours* Conclusion writing.
+
+### 20 March 2024
+* *3 hours* Presentation making/recording.
+* *1 hour* Getting all the files in correct place, read mes, etc.
+
+
 
 
 
